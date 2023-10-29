@@ -50,7 +50,8 @@ class Square:
         """Return the current square area"""
 
         return (self.__size * self.__size)
-    
+
+
     def pos_print(self):
         """Print the square in position"""
 
@@ -71,4 +72,3 @@ class Square:
         """Print the square in position"""
 
         print(self.pos_print(), end="")
-    
