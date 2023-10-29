@@ -5,6 +5,11 @@
 class Square:
     """Represents a square"""
 
+    def __str__(self):
+        """Print the square"""
+
+        return self.pos_print()[:-1]
+
     def __init__(self, size=0, posistion=(0, 0)):
         """Initializes the data"""
 
