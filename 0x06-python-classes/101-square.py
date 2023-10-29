@@ -51,7 +51,6 @@ class Square:
 
         return (self.__size * self.__size)
 
-
     def pos_print(self):
         """Print the square in position"""
 
