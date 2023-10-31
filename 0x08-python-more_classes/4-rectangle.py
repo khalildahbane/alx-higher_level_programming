@@ -5,12 +5,11 @@
 class Rectangle:
     """Defines a rectangle based on 2-rectangle.py"""
 
-    def __init__(self, width=0, height=0, rectangle=""):
+    def __init__(self, width=0, height=0):
         """Initializes a rectangle with width and height"""
 
         self.width = width
         self.height = height
-        self.rectangle = rectangle
 
     @property
     def width(self):
@@ -65,12 +64,12 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
 
-
-    for i in range(self.__height):
-        for m in range(self.__width):
-            rectangle += "#"
-        if n < self.__height - 1:
-            rectangle += "\n"
+        rectangle = ""
+        for i in range(self.__height):
+            for m in range(self.__width):
+                rectangle += "#"
+            if i < self.__height - 1:
+                rectangle += "\n"
         return (rectangle)
 
     def __repr__(self):
