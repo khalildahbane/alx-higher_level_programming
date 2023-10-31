@@ -46,11 +46,14 @@ class Rectangle:
         self.__height = value
 
         def area(self):
-            """returns instance method"""
+            """returns instance of rectangl"""
 
-            return self.width * self.height
-        
+            return self.__width * self.__height
+
         def perimeter(self):
-            """"Return perimeter method"""
+            """"Return perimeter of rectangle"""
+            
+            if self.__width == 0 or self.__height == 0:
+                return 0
 
-            return 2 * (self.width + self.height)
+            return 2 * (self.__width + self.__height)
