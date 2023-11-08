@@ -2,10 +2,10 @@
 """This module inherits from the list class"""
 
 
-class Mylist(list):
-    """a Public instance class"""
+class MyList(list):
+    """A class that inherits from list"""
 
     def print_sorted(self):
-        """print a sorted list"""
+        """prints a sorted list"""
 
         print(sorted(self))
