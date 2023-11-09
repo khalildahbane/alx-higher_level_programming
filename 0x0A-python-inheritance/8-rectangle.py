@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""An class based on 7-base_geometry.py"""
+"""Inheris from baseGeometry 7-base_geometry.py"""
 
 
 class BaseGeometry:
@@ -13,13 +13,14 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
 
-class Rectangle:
+
+class Rectangle(BaseGeometry):
     """this class inherits from BaseGeometry"""
 
     def __init__(self, width, height):
         """Intialize a new Rectangle"""
 
         self.integer_validator("width", width)
-        self.integer_validator("height", height)
         self.__width = width
+        self.integer_validator("height", height)
         self.__height = height
