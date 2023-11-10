@@ -23,4 +23,3 @@ class Student:
         """Replace all attributes of the Student"""
         if (json):
             self.__dict__ = json
-
