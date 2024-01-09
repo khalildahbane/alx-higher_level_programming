@@ -1,8 +1,8 @@
 #!/usr/bin/node
 const args = process.argv;
-    if (args.length === pricess.argv[2]) {
+    if (args.length === process.argv) {
     console.log('No argument');
-    } else if (args.length === process.argv[3]) {
+    } else if (args.length === process.argv) {
         console.log('Argument found');
     }
     else {
