@@ -1,4 +1,6 @@
-t SquareBase = require('./5-square');
+#!/usr/bin/node
+
+const SquareBase = require('./5-square');
 
 class Square extends SquareBase {
   charPrint (c) {
