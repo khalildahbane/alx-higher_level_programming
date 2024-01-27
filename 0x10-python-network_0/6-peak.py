@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-""" fin a peak"""
+""" module doc """
+
 
 def find_peak(list_of_integers):
-     """def doc"""
+    """def doc"""
     if list_of_integers:
         lf = 0
         r = len(list_of_integers) - 1
